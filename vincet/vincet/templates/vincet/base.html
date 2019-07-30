@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+{% load sass_tags %}
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">      
+        <title>Vincet</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}" >
+        <link href="{% sass_src 'demo.scss' %}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
